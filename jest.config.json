@@ -1,0 +1,10 @@
+{
+    "collectCoverage": true,
+    "testRegex": "((\\.|/*.)(spec|test))\\.(js|jsx|tsx|ts)?$",
+    "reporters": [ "default" ],
+    "testEnvironment" : "jsdom",
+    "modulePaths": [
+        "<rootDir>"
+      ],
+    "setupFilesAfterEnv": ["./tests/setupTests.js"]
+}

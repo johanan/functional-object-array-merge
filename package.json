@@ -1,0 +1,45 @@
+{
+  "name": "object-array-merge",
+  "version": "1.0.0-semantic-release",
+  "description": "Takes an array of objects and merges them based on a specific property",
+  "module": "es/index.js",
+  "main": "es/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "npm run build:es && npm run build:types",
+    "build:es": "babel --extensions .ts,.tsx ./index.ts --out-dir es",
+    "build:types": "tsc --project ./tsconfig.types.json",
+    "test": "jest && RAMDA_ALIAS=ramda21 jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "files": [
+    "es",
+    "types",
+    "index.ts",
+    "README.md",
+    "package.json",
+    "package-lock.json"
+  ],
+  "release": {
+    "branches": [
+      "main",
+      "next"
+    ]
+  },
+  "dependencies": {
+    "ramda": "^0.21.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.10",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/jest": "^27.4.0",
+    "@types/ramda": "^0.27.64",
+    "babel-jest": "^27.4.6",
+    "jest": "^27.4.7",
+    "ramda21": "npm:ramda@0.21.0",
+    "typescript": "^4.5.4"
+  }
+}

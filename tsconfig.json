@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "isolatedModules": true,
+      "lib": ["ESNext", "dom"],
+      "target": "es6",
+      "noEmit": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": false,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noUncheckedIndexedAccess": true,
+      "skipLibCheck": true,
+      "strict": true,
+    },
+    "include": ["./index.ts"],
+    "exclude": ["node_modules"]
+  }
