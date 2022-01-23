@@ -1,5 +1,5 @@
 {
-  "name": "object-array-merge",
+  "name": "functional-object-array-merge",
   "version": "1.0.0-semantic-release",
   "description": "Takes an array of objects and merges them based on a specific property",
   "module": "es/index.js",

@@ -1,7 +1,9 @@
-# Object Array Merge
+# Funtioncal Object Array Merge
 The most generic name I could come up with. This is a very small and very simple library. It really is just a simple composition of a few [Ramda](https://ramdajs.com/) functions.
 
 The library will merge a list of objects from left to right; later objects overwriting properties from earlier objects, by grouping them be a specfic property.
+
+This is functional as it is a function that accepts the prop name and returns a function that accepts the data last. Can be used in functional style composition (Point Free) as the functions are unary and the data is supplied last. 
 
 ## idMerge
 Merging by the property `id` is very common so this is exported as `idMerge`. You can always create your own for any property.
@@ -10,6 +12,7 @@ Merging by the property `id` is very common so this is exported as `idMerge`. Yo
 import { objectArrayMerge } from 'object-array-merge';
 
 const nameMerge = objectArrayMerge('name');
+nameMerge(nameArray);
 ```
 
 ## Examples
