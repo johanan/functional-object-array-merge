@@ -1,4 +1,4 @@
-# Funtioncal Object Array Merge
+# Functional Object Array Merge
 The most generic name I could come up with. This is a very small and very simple library. It really is just a simple composition of a few [Ramda](https://ramdajs.com/) functions.
 
 The library will merge a list of objects from left to right; later objects overwriting properties from earlier objects, by grouping them be a specfic property.
@@ -33,7 +33,7 @@ const defaultSort = {id: 'name', desc: true };
 const newSort = idMerge(R.prepend(defaultSort, state.sortBy))
 ```
 
-When there is an object with the id of `name` in the array it will use those values as it at the end of the arry. Otherwise if there isn't an object then it will use the default sort values.
+When there is an object with the id of `name` in the array it will use those values as it at the end of the array. Otherwise if there isn't an object then it will use the default sort values.
 
 You can also default multiple objects here as it will go through the array.
 
