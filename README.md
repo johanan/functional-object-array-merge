@@ -9,7 +9,7 @@ This is functional as it is a function that accepts the prop name and returns a 
 Merging by the property `id` is very common so this is exported as `idMerge`. You can always create your own for any property.
 
 ```js
-import { objectArrayMerge } from 'object-array-merge';
+import { objectArrayMerge } from 'functional-object-array-merge';
 
 const nameMerge = objectArrayMerge('name');
 nameMerge(nameArray);
@@ -26,7 +26,7 @@ Sorting in React Table comes back as an array of objects `Array<Object<id: colum
 Here would be the code to enforce the default of `name` to be descending.
 ```js
 import * as R from 'ramda';
-import { idMerge } from 'object-array-merge';
+import { idMerge } from 'functional-object-array-merge';
 
 //the table state is here as state
 const defaultSort = {id: 'name', desc: true };
@@ -43,7 +43,7 @@ You can build multiple objects over multiple steps and then combine everything i
 Using React Table again we have can build the columns from metadata and use some sane defaults. Depending on the table though we want to display or filter the data differently. 
 
 ```js
-import { idMerge } from 'object-array-merge';
+import { idMerge } from 'functional-object-array-merge';
 
 // built from Metadata
 const columns = [
