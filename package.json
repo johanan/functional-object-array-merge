@@ -11,7 +11,8 @@
     "build:types": "tsc --project ./tsconfig.types.json",
     "test": "jest && RAMDA_ALIAS=ramda21 jest"
   },
-  "author": "",
+  "repository": "https://github.com/johanan/functional-object-array-merge",
+  "author": "Joshua Johanan",
   "license": "MIT",
   "files": [
     "es",
@@ -41,5 +42,16 @@
     "jest": "^27.4.7",
     "ramda21": "npm:ramda@0.21.0",
     "typescript": "^4.5.4"
-  }
+  },
+  "keywords": [
+    "object",
+    "array",
+    "merge",
+    "key",
+    "prop",
+    "ramda",
+    "functional",
+    "fp",
+    "point-free"
+  ]
 }
